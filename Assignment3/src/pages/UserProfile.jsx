@@ -18,17 +18,57 @@ function UserProfile() {
               <img src="https://s3-alpha-sig.figma.com/img/0584/17a5/4f205aba496f239ced6e754fd1ca71f7?Expires=1724630400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=nJCvuJ9S3S14Dlwj69182PAUTeL0aK8U8Aqf~LznENvZSu4HgEJf5rRF9GWOnLsy2MO0Q7Nm8H86sozUaAzn3kjdOvta5yv0vrqhnlHFsHjjwa20T9YSMNWFliw~3cwT9GyfUmuQFec~zQR-pcGv5qXPyKg-vHA6n8qiJWjs0HrGC6UK1nyx3p9oWKP73-jNvpWV4nnav8GxnP2d~EQTXIGLUUBJUzyewMSLYKlV~JqeVN2jA17vwASfYEVUODpSZaG54YCBqabHv0xL9-HUKg8iYDzubcSd44oY6baeBgWAOOQ7sH3-W~v4RdPeLBdKC1p0Ugl4APwt47g66My9ig__" 
               alt="User Photo" 
               className='rounded-full w-[100px] h-[100px] mb-5' />
-              <h1 className='text-[24px] font-serif font-normal tracking-normal'>Tom Garqa</h1>
+              <h1 className='text-[24px] font-serif font-normal tracking-normal'>Tom Garza</h1>
               <h4 className='text-[12px] font-sans'>beautifullcoel355</h4>
             </div>
             <div className='w-full flex items-center gap-2 justify-center h-10 border-gray-400 border-t border-b'>
-              <div>
-              <FontAwesomeIcon  icon={faLocationDot} />
+              <div className='w-1/2 flex items-center gap-1 justify-center pl-24'>
+                <div className='bg-black w-6 rounded-full flex justify-center items-center h-6'><FontAwesomeIcon className='text-white text-[13px]'  icon={faLocationDot} /></div>
+                <h4 className='text-[9px] font-sans'>location</h4>
               </div>
-            
-            <FontAwesomeIcon icon={faPhone} />
+              <div className='w-1/2 flex items-center gap-1 justify-center pr-20'>
+                <div className='bg-black w-6 rounded-full flex justify-center items-center h-6'><FontAwesomeIcon className='text-white text-[13px]' icon={faPhone} /></div>
+                <h4 className='text-[9px] font-sans'>Call me</h4>
+              </div>
             </div>
-            <div></div>
+            <div className='w-full flex gap-10 mt-4'> 
+              <div>
+                <div>
+                  <h4 className='font-sans font-normal text-[10px]'>City</h4>
+                  <h2 className='font-serif text-[20px] font-normal'>Mildura</h2>
+                </div>
+                <div>
+                  <h4 className='font-sans font-normal text-[10px]'>Date of birth</h4>
+                  <h2 className='font-serif text-[20px] font-normal'>09 December, 1982</h2>
+                </div>
+                <div>
+                  <h4 className='font-sans font-normal text-[10px]'>Time zone</h4>
+                  <h2 className='font-serif text-[20px] font-normal'>-10:00 (Hawaii)</h2>
+                </div>
+              </div>
+              <div>
+                <div>
+                  <h4 className='font-sans font-normal text-[10px]'>Nationality</h4>
+                  <h2 className='font-serif text-[20px] font-normal'>AU</h2>
+                </div>
+                <div>
+                  <h4 className='font-sans font-normal text-[10px]'>Phone No.</h4>
+                  <h2 className='font-serif text-[20px] font-normal '>123-456-789</h2>
+                </div>
+                <div>
+                  <h4 className='font-sans font-normal text-[10px]'>Regestered since</h4>
+                  <h2 className='font-serif text-[20px] font-normal'>11 november, 2012</h2>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div className=' flex justify-end items-end mt-5 gap-20'>
+                <p className='text-white font-semibold font-serif text-[8px]'>	&#169; chai aur code</p>
+                <img src="https://s3-alpha-sig.figma.com/img/6dbf/e4f9/9eddf1549be82b67d870f4041b254cab?Expires=1724630400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=I~hENpWCNY3kb~sXvHQg7uae8G-s~6A9TGLruWNZKOzNvUzveOIGAiFJGEx8Jly2kp1ReBZPy6IZcDu1JYHsrVMvKqaUlUZKlKDp92kjG8BD8Q4nYY9Y9jB6qXSgnP-HHKnn-d8KMx0AtTjTKalRKfcXZL-5b6vfHNpbhP7g-IHOo6tOMm7xxOg5QSfWxhP7QjegE2ROXUso618crIUeaPa5naFHSgRTaa3fGO5VW7x--RvX7EO7guhQa3UrZZcKnQTJnSk4iwUr8YG3nMFBvwu4~dEVjj~hu-e0Kal8oIcbHpIbiXzFHloOyQFn8QVdjx5jgI1T9X9weXWt~csZww__" 
+                alt=""
+                className='w-[60px] h-[62px] mr-2 rounded-xl' />
+              </div>
+            </div>
           </div>
         </div >
       </div>
