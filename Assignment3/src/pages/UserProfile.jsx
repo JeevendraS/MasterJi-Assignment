@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowLeft, faRotateRight, faLocationDot, faPhone } from '@fortawesome/free-solid-svg-icons'
+import RedirectToGoogleMaps from '../components/RedirectToMap'
 
 function UserProfile() {
   const [user, setUser] = React.useState({})
@@ -20,6 +21,12 @@ function UserProfile() {
                         })
 
   }
+  const redirectToCAC = ()=>{
+    window.open("https://chaicode.com", "_blank")
+  }
+  const handleClick = ()=>{
+    randomUser()
+  }
   useEffect(()=>{
     randomUser()
   },[])
@@ -35,7 +42,7 @@ function UserProfile() {
             <div className=' h-[5%] text-black flex flex-row justify-between mx-2 '>
               <FontAwesomeIcon className='my-auto active:translate-x-1' icon={faArrowLeft} />
               <h3 className='my-auto font-serif font-normal text-[16px]'>Profile Overview</h3>
-              <FontAwesomeIcon className='my-auto active:rotate-45' icon={faRotateRight} />
+              <FontAwesomeIcon className='my-auto active:rotate-45' onClick={handleClick} icon={faRotateRight} />
             </div>
             <div className='w-full h-[35vh] flex items-center justify-center flex-col'>
               <p className='text-[8px] text-white rounded-md right-[8rem] top-[4rem] absolute h-3 w-5 text-center bg-black'>{user.data.name.title}</p>
@@ -90,6 +97,7 @@ function UserProfile() {
                 <p className='text-white font-semibold font-serif text-[8px]'>	&#169; chai aur code</p>
                 <img src="https://s3-alpha-sig.figma.com/img/6dbf/e4f9/9eddf1549be82b67d870f4041b254cab?Expires=1724630400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=I~hENpWCNY3kb~sXvHQg7uae8G-s~6A9TGLruWNZKOzNvUzveOIGAiFJGEx8Jly2kp1ReBZPy6IZcDu1JYHsrVMvKqaUlUZKlKDp92kjG8BD8Q4nYY9Y9jB6qXSgnP-HHKnn-d8KMx0AtTjTKalRKfcXZL-5b6vfHNpbhP7g-IHOo6tOMm7xxOg5QSfWxhP7QjegE2ROXUso618crIUeaPa5naFHSgRTaa3fGO5VW7x--RvX7EO7guhQa3UrZZcKnQTJnSk4iwUr8YG3nMFBvwu4~dEVjj~hu-e0Kal8oIcbHpIbiXzFHloOyQFn8QVdjx5jgI1T9X9weXWt~csZww__" 
                 alt=""
+                onClick={redirectToCAC}
                 className='w-[60px] h-[62px] mr-2 rounded-xl' />
               </div>
             </div>
